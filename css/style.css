@@ -5,7 +5,7 @@
   display: none; }
 
 /* Larger than tablet */
-@media (min-width: 750px) {
+/*@media (min-width: 750px) {*/
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
@@ -50,7 +50,7 @@
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
-}
+/*}*/
 
 .step:hover i { opacity: .7; }
 .size-32 {
