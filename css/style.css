@@ -1,6 +1,13 @@
+/* Align text to the center of the container.
+ * origin: bootstrap.
+ */
+
 .text-center {
   text-align: center !important;
 }
+
+
+/* Navbar */
 
 .navbar {
   display: none;
@@ -72,15 +79,17 @@
   width: 80%;
 }
 
-.step:hover i {
-  opacity: .7;
-}
 
-.size-32 {
-  font-size: 32px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
+/* Wrapper for text */
+.text-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box; }
+
+/* Footer */
 
 .footer {
   display: block;
@@ -103,3 +112,7 @@
   line-height: 3.5rem;
   color: #333;
 }
+
+/* Remove link decoration */
+
+a {text-decoration: none;}
