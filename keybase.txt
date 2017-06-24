@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/chinmaypai
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://chinmaypai.me
+  * I am chinmaypai (https://keybase.io/chinmaypai) on keybase.
+  * I have a public key with fingerprint 93B8 7611 9FE3 562D 168D  926C 16AC F3FE FF3B 26B4
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01016493b828799f92d81dd1f1676afb6cb685a8bd736b51253c68cd3493b56270d70a",
+            "fingerprint": "93b876119fe3562d168d926c16acf3feff3b26b4",
+            "host": "keybase.io",
+            "key_id": "16acf3feff3b26b4",
+            "kid": "01016493b828799f92d81dd1f1676afb6cb685a8bd736b51253c68cd3493b56270d70a",
+            "uid": "046c9b13e3a8d2163e024376bac53619",
+            "username": "chinmaypai"
+        },
+        "service": {
+            "hostname": "chinmaypai.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1498299528,
+    "expire_in": 157680000,
+    "prev": "5fb767cc404d97c62392d253bc54f94a4aafc2c5121ed1825c40e3d9f678f114",
+    "seqno": 18,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.72
+Comment: https://keybase.io/crypto
+
+yMIjAnicrZJfSBRBHMfP0kQt8k8PUaCw9JBkcrOzO7t7RYUVGqbUg/TH4tyZnfVW
+7/bOu9UUsyglhOopBc0Mw6CeIgX7g1HpZaaSpmRBhhHFSUahD5XgRc1aPdVj8zL8
+Zj7f7/zmy+/RquWOxJj895Gj5YVvSmNG+toqHYcKtzbWctiv1XCuWq6cLm3Uq9GQ
+5S43NM7FOYETIEGBWOZlSVF0hddkoGlAB0hCqo4RwUgWVRlrEkRYBLwICZKJBm2N
+iHjJqUlOlcvidMMspcFA0DAtZmsbSggARaeQURpAsqbwiACkEh3qVNch5hEWmNDj
+D9kK1hxWQzTb8LMzVriX2vsH/5/7rvxlJyCiYAApVGWNBwhSJy9ACWGViBABxQZD
+NGiqPspo4jFMn1oTUA2uLotj51UGoXa09l/+YrJZncUFgn7LT/xeduWxrEDIZUut
+moDNHqPY/dvFjQ1TY1EyRRUNhgy/ybkAI4ll2LZAUGReUURezuJodcAIUrdhE6KE
+ZCdb9ju0ilmKOpaQRIjgFDRFIoiHLCEWAiaioCuCKqiqTnjCggFUAzIvMpJCTdGR
+JOsA2EGHaIXpZ97sKUstZZ4ho9RUrcog5er6Hx6JdcQkOlbELbNnzJGYkPxn8oai
+8d8zcpJuwrn4z9O9TQX98yVR/O7Vzqlbsa0fu2dBrie3caxuMD6vLe3y+a8Jg5GW
+qxnbYnO6zy1YE/XzteuG09f7uIGhXWZqjhAuqp+AXa7kjWcik/dGy5zbn+0ZyF+b
+Xjh16XlR6sr85jzvxcjc6+ym/tPF3uZpTDPe+kZWp625Pf2lfni6oLZhRqAL9w9U
+tpfcyHvZdTwaXgxfmwnfNeJ+dDxJun7jTktPpGA4s3j0QbShet/BE5FPMb2ZheGO
+vUUf9qemxJ986t4gLQbjOrcs7uh5kQnHz34rTrqS4il7bJW74mZHEyo2nfKUEQO4
+Jy+E+bG68c19Ucduob218/BPWGZGWg==
+=nt5M
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/chinmaypai
+==================================================================
+
