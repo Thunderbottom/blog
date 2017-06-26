@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on The Machine Blog</title>
-    <link>http://blog.chinmaypai.me/tags/</link>
+    <link>https://blog.chinmaypai.me/tags/</link>
     <description>Recent content in Tags on The Machine Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Mon, 26 Jun 2017 03:30:18 +0000</lastBuildDate>
     
-	<atom:link href="http://blog.chinmaypai.me/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.chinmaypai.me/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Machine Learning</title>
-      <link>http://blog.chinmaypai.me/tags/machine-learning/</link>
+      <link>https://blog.chinmaypai.me/tags/machine-learning/</link>
       <pubDate>Mon, 26 Jun 2017 03:30:18 +0000</pubDate>
       
-      <guid>http://blog.chinmaypai.me/tags/machine-learning/</guid>
+      <guid>https://blog.chinmaypai.me/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://blog.chinmaypai.me/tags/python/</link>
+      <link>https://blog.chinmaypai.me/tags/python/</link>
       <pubDate>Mon, 26 Jun 2017 03:30:18 +0000</pubDate>
       
-      <guid>http://blog.chinmaypai.me/tags/python/</guid>
+      <guid>https://blog.chinmaypai.me/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tensorflow</title>
-      <link>http://blog.chinmaypai.me/tags/tensorflow/</link>
+      <link>https://blog.chinmaypai.me/tags/tensorflow/</link>
       <pubDate>Mon, 26 Jun 2017 03:30:18 +0000</pubDate>
       
-      <guid>http://blog.chinmaypai.me/tags/tensorflow/</guid>
+      <guid>https://blog.chinmaypai.me/tags/tensorflow/</guid>
       <description></description>
     </item>
     
