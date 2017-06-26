@@ -1,0 +1,292 @@
+    <!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="The Machine Blog">
+		<meta name="description" content="A blog about machines, manipulation, and automation">
+		<meta name="generator" content="Hugo 0.24.1" />
+		<title>Introduction to TensorFlow Variables &middot; The Machine Blog</title>
+		<link rel="shortcut icon" href="http://blog.chinmaypai.me/images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="57x57" href="http://blog.chinmaypai.me/images/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="http://blog.chinmaypai.me/images/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="http://blog.chinmaypai.me/images/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="http://blog.chinmaypai.me/images/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="http://blog.chinmaypai.me/images/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="http://blog.chinmaypai.me/images/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="http://blog.chinmaypai.me/images/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://blog.chinmaypai.me/images/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://blog.chinmaypai.me/images/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="http://blog.chinmaypai.me/images/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="http://blog.chinmaypai.me/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="http://blog.chinmaypai.me/images/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="http://blog.chinmaypai.me/images/favicon-16x16.png">
+		<link rel="manifest" href="http://blog.chinmaypai.me/images/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="http://blog.chinmaypai.me/images/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+		<link rel="stylesheet" href="http://blog.chinmaypai.me/css/style.css">
+		<link rel="stylesheet" href="http://blog.chinmaypai.me/css/highlight.css">
+		
+
+		<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+		
+		<link rel="stylesheet" href="http://blog.chinmaypai.me/css/font-awesome.min.css">
+		
+
+		
+		<link href="http://blog.chinmaypai.me/index.xml" rel="alternate" type="application/rss+xml" title="The Machine Blog" />
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+	
+	
+		<a href='http://blog.chinmaypai.me/'> <span class="arrow">←</span>Home</a>
+	
+	<a href='http://blog.chinmaypai.me/post'>Archive</a>
+	<a href='http://blog.chinmaypai.me/tags'>Tags</a>
+	
+
+	
+
+	
+	<a class="cta" href="http://blog.chinmaypai.me/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper">
+            <article class="post">
+                <header>
+                    <h1>
+                        Introduction to TensorFlow Variables
+                    </h1>
+                    <h2 class="headline">
+                    Jun 26, 2017 03:30
+                    · 1402 words
+                    · 7 minutes read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a href="http://blog.chinmaypai.me/tags/python">Python</a>
+                          
+                              <a href="http://blog.chinmaypai.me/tags/tensorflow">TensorFlow</a>
+                          
+                              <a href="http://blog.chinmaypai.me/tags/machine-learning">Machine-Learning</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                <section id="post-body">
+                    
+
+<p>Before diving into machine learning, it is better to familiarize oneself with the tools, paradigms, and the outcome that is to be achieved. In this article, we will try to cover the basics of Tensorflow Variables and how they work.</p>
+
+<p><em><strong>NOTE:</strong> Before proceeding, it is best to <a href="https://www.tensorflow.org/install/" title="Install Tensorflow" target="_blank">Install Tensorflow</a> if you haven’t already, but it is not strictly required for this tutorial.</em></p>
+
+<h3 id="what-are-tensorflow-variables">What are Tensorflow Variables?</h3>
+
+<p>Tensorflow Variables are used to store, reference and manipulate data just like any other variable, although they&rsquo;re much more than just that. But there are certain things that we need to take care of, before we can make these Variables process information.</p>
+
+<h3 id="creating-tensorflow-variables">Creating Tensorflow Variables</h3>
+
+<p>Usually, we create variables in Python by just defining a variable name and assigning a value to it, which might look something like:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; x = 5
+&gt;&gt;&gt; y = x * 3
+&gt;&gt;&gt; print(y)
+15
+</code></pre>
+
+<p>As we can see, we basically assign a variable <code>x</code> with a value ‘5’, and then pass the variable as a value for another variable <code>y</code>, multiplying by 3 to the variable <code>x</code> before assignment. Easy, <em>right?</em></p>
+
+<p>But Tensorflow Variables function a <em>little</em> differently, where in you need to  create a Variable by using the <a href="https://www.tensorflow.org/api_docs/python/tf/Variable" title="Tensorflow Variable" target="_blank"><code>tf.Variable()</code></a> constructor. It takes <code>value</code> as a parameter, along with an optional keyword parameter for assigning a <code>name</code> for the Variable, which comes in handy when you need to save and restore your Variable instances. We’ll talk more about it in a different post. Meanwhile, here’s what the Variable constructor looks like:</p>
+
+<pre><code class="language-python">import tensorflow as tf
+# Create a variable
+w = tf.Variable(&lt;initial-value&gt;, name=&lt;optional-name&gt;)
+</code></pre>
+
+<p>Alright, let’s try creating a Tensorflow Variable:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import tensorflow as tf
+&gt;&gt;&gt; x = tf.constant(5, name='x')
+&gt;&gt;&gt; y = tf.Variable(x * 3, name='y')
+</code></pre>
+
+<p>Here, we’ve created a constant with a value ‘5’ and assigned it to <code>x</code>. We take that constant and use it to compute a Variable <code>y</code> by multiplying 3 to  the constant <code>x</code>. Although quite the same thing, this doesn&rsquo;t look similar to the variables that we created before. What is the difference though? Let’s try printing the value for <code>y</code>:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; print(y)
+Tensor(&quot;y/read:0&quot;, shape=(), dtype=int32)
+</code></pre>
+
+<p>Wait, this doesn’t quite look like the answer that we want. Have we done something wrong? Why isn’t it printing 15? So many questions. Let’s find out.</p>
+
+<h6 id="how-is-a-tensorflow-variable-different-than-a-normal-variable"><em>How is a Tensorflow Variable different than a normal variable?</em></h6>
+
+<p>Tensorflow Variables neither look, nor function like other variables. There’s a quite a bit of difference, and the differences are quite subtle. Unlike other variables, there is no computation taking place in the code. Instead, it takes all the Variables and constants in the code, and stores them as Tensors. Using these Tensors, Tensorflow creates a graph which is then used to compute the output at the time of execution.</p>
+
+<h6 id="what-are-graphs"><em>What are Graphs?</em></h6>
+
+<p>Graphs are basically a group, or a series of Tensorflow operations. Consider it like a data structure graph with nodes connected to each other through links. Now, each node may take zero or more Tensors as input, and produce a Tensor as the output and pass it up ahead to the next node as an input. This continues till it reaches the root node, or basically to the end of the computational graph. We need to initialize the Variables to create a Graph.</p>
+
+<h6 id="what-are-tensors"><em>What are Tensors?</em></h6>
+
+<p>Tensors are nothing but objects that describe relations between vectors and other Tensors. Tensors represent a computational output of any operation. From the documentation:</p>
+
+<p><strong><em>&ldquo;A Tensor is a symbolic handle to one of the outputs of an Operation. It does not hold the values of that operation&rsquo;s output, but instead provides a means of computing those values in a TensorFlow <a href="https://www.tensorflow.org/api_docs/python/tf/Session" title="Tensorflow Session" target="_blank"><code>tf.Session()</code></a>&ldquo;</em></strong></p>
+
+<p>Tensors are basically a structure which do not hold any computational value. To actually transform these Tensors into Graphs, we need to first initialize the Variables, which creates a Tensor Object of the Graph. A Tensor Object is nothing but a set of operations, which may have Tensors at input and output.</p>
+
+<p>We execute this Graph to calculate the value for each Variable. We then need to execute the Variable to get the value. A Variable needs to be executed for each time the value is to be updated. It is somewhat confusing at the start, but it sure does get better.</p>
+
+<h3 id="initializing-tensorflow-variables">Initializing Tensorflow Variables</h3>
+
+<p>We want to initialize <em>all the Variables</em> in the code. To do that, we use <a href="https://www.tensorflow.org/versions/master/api_docs/python/tf/global_variables_initializer" title="Tensorflow Global Variables Initializer" target="_blank"><code>tf.global_variables_initializer()</code></a>. This is a Tensorflow helper function <a href="#references">[1]</a> which initializes all the Variables by creating a graph of dependencies and relationships between the Variables when executed. There is an alternative to this if you ever want to initialize only a select bunch of Variables <a href="#references">[2]</a>. Let’s try initializing the Variables:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import tensorflow as tf
+&gt;&gt;&gt; x = tf.constant(5, name='x')
+&gt;&gt;&gt; y = tf.Variable(x * 3, name='y')
+&gt;&gt;&gt; compute = tf.global_variables_initializer()
+</code></pre>
+
+<p>The code doesn’t print anything although we’ve initialized the Variables. Let’s try printing <code>compute</code>:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; print(compute)
+name: &quot;init&quot;
+op: &quot;NoOp&quot;
+input: &quot;^Variable/Assign&quot;
+input: &quot;^y/Assign&quot;
+</code></pre>
+
+<p>Okay, that didn’t work as well. Why doesn’t it print the value even though we have initialized and executed the Variables?</p>
+
+<p>Well, according to the Tensorflow semantics, printing the value of an initialized Variable is <strong>NOT</strong> what executing the Variable means. As we learned before, initializing the Variable creates a graph of relations between Variables, which is not computed unless the Variable is executed. So in the current state the Graph is just initialized by the helper function and stored as a Tensor Object, and does not compute anything as the Variables need to be executed to compute the value.</p>
+
+<h3 id="executing-tensorflow-variables">Executing Tensorflow Variables</h3>
+
+<p>To execute a Variable, we need to create a Session where in the output for the initialized Variables can be computed. A Session is an instance for executing initialized Variables. From the documentation:</p>
+
+<p><em><strong>&ldquo;A Session instance encapsulates the environment in which Operations in a Graph are executed to compute Tensors&rdquo;</strong></em></p>
+
+<p>We can create a session with <a href="https://www.tensorflow.org/api_docs/python/tf/Session" title="Tensorflow Session" target="_blank"><code>tf.Session()</code></a> and use it to execute the Graph. We also need to explicitly close the Session after we’re done using it. A workaround to closing the session is to create a Session using the <a href="https://docs.python.org/3/reference/compound_stmts.html#with" target="_blank"><code>with</code></a> statement in Python. Then, we’ll use <code>Session.run()</code> function to compute the graph, and execute the Variable. Let’s try creating a Session and executing our Variable:</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; with tf.Session() as sess:
+...	     sess.run(compute)
+...	     print(sess.run(y))
+...
+15
+</code></pre>
+
+<p>Great! It finally outputs the expected value.</p>
+
+<p><strong>But what is happening? Why do we need to <code>sess.run(compute)</code>? Didn&rsquo;t we initialize the Variables already?</strong> <em>No</em>.</p>
+
+<p>All that we&rsquo;ve done is called a <strong>&ldquo;Tensorflow helper function&rdquo;</strong> <a href="#references">[1]</a>, which creates a so called <strong>&ldquo;Tensor Object&rdquo;</strong> <em>(AKA &ldquo;Op&rdquo; in Tensorflow semantics)</em>. We need to call <code>sess.run(compute)</code> to actually initialize the Variables by creating a Graph from the Tensor, then compute the Graph and then execute the Variables to get the output value.</p>
+
+<p><strong><em>Do we have to do this every time we create a session?</em></strong> <em>Yes, and no.</em></p>
+
+<p>We need to run the Variable every time we need to find the output value, but we can and should initialize the Variables just once, and it is recommended to actually <strong>NOT</strong> initialize it  more than once <a href="#references">[3]</a>.</p>
+
+<p><strong><em>Can we update the Variable while in the session?</em></strong> <em>Yes, obviously.</em></p>
+
+<p>Let’s try it out :</p>
+
+<pre><code class="language-python">&gt;&gt;&gt; import tensorflow as tf
+&gt;&gt;&gt; # Create a Variable with value 0
+&gt;&gt;&gt; a = tf.Variable(0, name=‘a’)
+&gt;&gt;&gt; init = tf.global_variables_initializer()
+&gt;&gt;&gt; with tf.Session() as sess:
+...	     sess.run(init)
+...	     for i in range(5):
+...	     	     a = a + i
+...	     	     print(sess.run(a))
+...
+0
+1
+3
+6
+10
+</code></pre>
+
+<p>As we can see, the Variables can be updated during the session, and each time the Variable is updated, we need to <code>run()</code> it to actually get the value for the Variable. Although, we initialized the Variables just once before running the loop. This is because every time we run <code>tf.global_variable_initializer()</code> a Graph is initialized. This may lead to undesired consequences <a href="#references">[3]</a>.</p>
+
+<h5 id="references">References</h5>
+
+<h6 id="citations">Citations:</h6>
+
+<p>[1] : <a href="https://www.tensorflow.org/versions/r0.12/api_docs/python/state_ops/variable_helper_functions" target="_blank">Tensorflow Helper Functions.</a></p>
+
+<p>[2] : <a href="https://www.tensorflow.org/versions/master/api_docs/python/tf/variables_initializer" target="_blank">Tensorflow Variables initializer: <code>tf.variables_initializer</code>.</a></p>
+
+<p>[3] : <a href="http://www.kdnuggets.com/2017/05/how-not-program-tensorflow-graph.html" target="_blank">KDNuggets: How not to program Tensorflow Graphs.</a></p>
+
+<h6 id="other-reference-articles">Other reference articles:</h6>
+
+<p>Tensorflow documentation : <a href="https://www.tensorflow.org/programmers_guide/variables" target="_blank">Variables: Creation, Initialization, Saving, and Loading</a></p>
+
+<hr />
+
+<p><strong>That is it for now, Hopefully this article helped you understand Tensorflow Variables. You might want to check out articles in the references section which will help you better understand about Tensorflow. You may also add this site to your <a href="https://blog.chinmaypai.me/index.xml" title="RSS Feed" target="_blank">RSS feed</a> to get more updates on the articles posted on the blog.</strong></p>
+
+<hr />
+
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://github.com/thunderbottom">
+        <i class="fa fa-github"></i>
+    </a>
+    
+    <a class="symbol" href="https://open.spotify.com/user/chinmaypai">
+        <i class="fa fa-spotify"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2017 <a href="https://chinmaypai.me">Chinmay Pai</a>
+    
+    </p>
+    
+</footer>
+
+        </section>
+
+        <script src="http://blog.chinmaypai.me/js/jquery-2.2.4.min.js"></script>
+<script src="http://blog.chinmaypai.me/js/main.js"></script>
+<script src="http://blog.chinmaypai.me/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>
