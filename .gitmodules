@@ -1,0 +1,3 @@
+[submodule "themes/coder"]
+	path = themes/coder
+	url = git@github.com:Thunderbottom/hugo-coder.git
