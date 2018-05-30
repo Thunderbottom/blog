@@ -71,7 +71,8 @@ Multiple such related tensor objects make up a computational graph. We then exec
 
 ### Generating a Tensorflow computational graph
 
-We want to generate a graph for all the variables in the code. To do that, we use [tf.global_variables_initializer()][4]. This is a TensorFlow helper function which initializes all the variables by creating a graph of dependencies and relationships between the variables when executed.<sup>[1](#references)</sup> There also exists an alternative if you want to initialize only a select bunch of variables.<sup>[2](#references)</sup>
+We want to generate a graph for all the variables in the code. To do that, we use [tf.global_variables_initializer()][4]. This is a TensorFlow helper function which initializes all the variables by creating a graph of dependencies and relationships between the variables when executed.<sup>[1]({{<ref "variables.md#references">}})</sup> There also exists an alternative if you want to initialize only a select bunch of variables.<sup>[2]({{<ref "variables.md#references">}})</sup>
+
 
 Okay, now on with initializing the variables:
 
@@ -114,7 +115,7 @@ In[14]: with tf.Session() as sess:
 
 _**Do we need to do this every time we create a session?** Yes, and no._
 
-We need to execute the variable every time it is updated, but we initialize the variables just once. It is not recommended to reinitialize variables because doing so generates duplicate operations.<sup>[3](#references)</sup>
+We need to execute the variable every time it is updated, but we initialize the variables just once. It is not recommended to reinitialize the variables all over because doing so generates duplicate operations.<sup>[3]({{<ref "variables.md#references">}})</sup>
 
 **_Can we update the variables in the session?_** _Yes, that can be done._
 
