@@ -4,7 +4,7 @@ slug = "projects"
 +++
 
 
-The list is inexhaustive and unordered. For a far more complete list, check out my [Github][github].
+The list is inexhaustive and unordered. For a far more complete list, check out my [GitHub][github].
 
 
 #### Open Source Projects

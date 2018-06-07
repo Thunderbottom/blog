@@ -26,4 +26,4 @@ You can find me on [GitHub][3], or you can contact me through [email][4].
 [5]: https://t.me/smolboye
 [6]: https://news.ycombinator.com/user?id=pacmansyyu
 [7]: https://tildes.net/u/smolboye
-[8]: https://chinmaypai.me/resume.pdf
+[8]: https://github.com/Thunderbottom/resume/raw/master/resume.pdf
