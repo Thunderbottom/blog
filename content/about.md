@@ -16,7 +16,7 @@ You can find me on [GitHub][3], or you can contact me through [email][4].
 
 * I check my [email][4] many times a day.
 * I am also quite active on [telegram][5]. 
-* I like lurking on [hackernews][6] and [tildes][7].
+* I frequently browse [hackernews][6] and [tildes][7].
 * If you would like to hire me, here is a copy of my [resume][8].
 
 [1]: http://www.freeopensourcesoftware.org

@@ -14,8 +14,8 @@ pygmentscodefencesguesssyntax = true
 [params]
     pagetitle = "chinmaypai"
     author = "Chinmay D. Pai"
-    info = "hm, i am unsure"
-    description = "i dont know?"
+    info = "Specialist in making things and then breaking them."
+    description = "Chinmay Pai - Homepage"
     keywords = "blog,developer,personal"
 
     hideCredits = true
@@ -50,6 +50,10 @@ pygmentscodefencesguesssyntax = true
     weight = 2
     url = "/gpg/"
 [[menu.main]]
-    name = "About"
+    name = "Projects"
     weight = 3
+    url = "/projects/"
+[[menu.main]]
+    name = "About"
+    weight = 4
     url = "/about/"
