@@ -42,11 +42,11 @@ The list is inexhaustive and unordered. For a far more complete list, check out 
 
 * [Structuring Machine Learning Projects][11]: by Andrew Ng, deeplearning.ai, Coursera.
 
+* [Convolutional Neural Networks][12]: by Andrew Ng, deeplearning.ai, Coursera.
+
 ###### In-Progress
 
-* [Deep Learning Pt. 1][12]: by Jeremy Howard, fast.ai.
-
-* [Convolutional Neural Networks][13]: by Andrew Ng, deeplearning.ai, Coursera.
+* [Deep Learning Pt. 1][13]: by Jeremy Howard, fast.ai.
 
 
 
@@ -63,8 +63,8 @@ The list is inexhaustive and unordered. For a far more complete list, check out 
 [9]: https://www.coursera.org/account/accomplishments/certificate/9QCT7QH9HY83
 [10]: https://www.coursera.org/account/accomplishments/certificate/W68YU22HPZLW
 [11]: https://www.coursera.org/account/accomplishments/certificate/37XS2DNX4TV7
-[12]: https://fast.ai
-[13]: https://www.coursera.org/learn/convolutional-neural-networks
+[12]: https://www.coursera.org/account/accomplishments/certificate/CEM3JYUCELPC
+[13]: https://fast.ai
 
 [telegram]: https://t.me
 [xkcd]: https://xkcd.com
