@@ -7,6 +7,7 @@ date: "2018-06-20T03:30:18"
 categories:
   - "GNU/Linux"
   - "Installation"
+draft: true
 disable_comments: true
 ---
 
