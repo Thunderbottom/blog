@@ -44,10 +44,12 @@ The list is inexhaustive and unordered. For a far more complete list, check out 
 
 * [Convolutional Neural Networks][12]: by Andrew Ng, deeplearning.ai, Coursera.
 
+* [Sequence Models][13]: by Andrew Ng, deeplearning.ai, Coursera.
+
 ###### In-Progress
 
-* [Deep Learning Pt. 1][13]: by Jeremy Howard, fast.ai.
-* [Sequence Models][14]: by Andrew Ng, deeplearning.ai, Coursera.
+* [Deep Learning Pt. 1][14]: by Jeremy Howard, fast.ai.
+
 
 
 
@@ -64,8 +66,8 @@ The list is inexhaustive and unordered. For a far more complete list, check out 
 [10]: https://www.coursera.org/account/accomplishments/certificate/W68YU22HPZLW
 [11]: https://www.coursera.org/account/accomplishments/certificate/37XS2DNX4TV7
 [12]: https://www.coursera.org/account/accomplishments/certificate/CEM3JYUCELPC
-[13]: https://fast.ai
-[14]: https://www.coursera.org/learn/nlp-sequence-models
+[13]: https://www.coursera.org/account/accomplishments/certificate/KHRZ8GYBLBZG
+[14]: https://fast.ai
 
 [telegram]: https://t.me
 [xkcd]: https://xkcd.com
