@@ -1,0 +1,59 @@
+baseURL = "https://thunderbottom.github.io"
+languageCode = "en-us"
+title = "Chinmay Pai"
+theme = "cocoa"
+
+paginate = 20
+canonifyurls = false
+
+#pygmentsstyle = "b2"
+#pygmentscodefences = true
+#pygmentscodefencesguesssyntax = true
+
+
+[params]
+    pagetitle = "chinmaypai"
+    author = "Chinmay D. Pai"
+    info = "Specialist in making things and then breaking them."
+    description = "Chinmay Pai - Homepage"
+    keywords = "blog,developer,personal"
+
+    hideCredits = true
+    hideCopyright = true
+    
+
+[[params.social]]
+    name = "Github"
+    weight = 1
+    url = "https://github.com/thunderbottom"
+[[params.social]]
+    name = "Twitter"
+    weight = 2
+    url = "https://twitter.com/pacmansyyu"
+[[params.social]]
+    name = "LinkedIn"
+    weight = 3
+    url = "https://www.linkedin.com/in/chinmaydpai/"
+[[params.social]]
+    name = "Keybase"
+    weight = 4
+    url = "https://keybase.io/chinmaypai"
+
+
+
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url  = "/posts/"
+[[menu.main]]
+    name = "GPG"
+    weight = 2
+    url = "/gpg/"
+[[menu.main]]
+    name = "Projects"
+    weight = 3
+    url = "/projects/"
+[[menu.main]]
+    name = "About"
+    weight = 4
+    url = "/about/"

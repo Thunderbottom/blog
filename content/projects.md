@@ -13,18 +13,18 @@ The list is inexhaustive and unordered. For a far more complete list, check out 
 
 * [UltimateBrowserProject][1]: Android browser based on WebView.
 
-* [Kernel Updater][2]: Android root-based application to update custom Android Linux Kernels.
+* [Kernel Updater][2]: Android application for custom Android Linux Kernels.
 
-* [Bash.Org Client][3]: Android client for [bash.org](https://bash.org) written completely in Kotlin.
+* [Bash.Org Client][3]: Android client for [bash.org](https://bash.org) written in Kotlin.
 
 
 ###### Python
 
-* [GitSync][4]: Script to sync all git repositories and update forks using GitHub API
+* [GitSync][4]: Script to sync all git repositories and update forks using GitHub API.
 
-* [PyCSVtoXLSX][5]: CLI script to convert CSV to XLSX. Also has a GUI version written using Python Tkinter.
+* [PyCSVtoXLSX][5]: CLI script and Tk GUI to convert CSV to XLSX.
 
-* [XKCD-Telegram-Bot][6]: Bot for [Telegram][telegram] that pulls and displays comics from [XKCD][xkcd] on request.
+* [XKCD-Telegram-Bot][6]: [Telegram][telegram] bot that pulls and displays comics from [XKCD][xkcd].
 
 * [Transpy][7]: Flask demonstration for loss in translation using Google Translate API.
 

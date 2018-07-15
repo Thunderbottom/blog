@@ -42,7 +42,7 @@ Here are some of the questions I would like to have cleared before getting you i
 
 * __What can I expect to have working by the end of this guide?__
 
-	If you follow this guide, you will end up with a barebones Void Linux installation with everything encrypted, including the `/boot` partition. You may then follow guides from the [wiki][7] to get your system running as you like.
+	If you follow this guide, you will end up with a barebones Void Linux installation with everything encrypted, including the **/boot** partition. You may then follow guides from the [wiki][7] to get your system running as you like.
 
 * __How long will it take for installation?__
 
@@ -92,7 +92,7 @@ You may also create additional partitions for __/home__ or __/var__ if you wish,
 
 Since our first partition (i.e: /dev/sdX1) is the ESP, the partitions that we create will end with numbers starting for 2.
 
-__Make sure to enter a _really strong password_ when asked for it, and then write it down somewhere for safety. If you forget this password, you WILL NOT be able to boot into your system and the only way to fix this would be to format your drive. Maybe write it down for safety.__
+__Make sure to enter a _really strong password_ when asked for it, and then write it down somewhere for safety. If you forget this password, you WILL NOT be able to boot into your system and the only way to fix this would be to format your drive.__
 
 ```sh
 cryptsetup luksFormat -C aes-xts-plain64 -s 512 /dev/sdX2
